@@ -1,43 +1,50 @@
-Chat with Large Language Models
+# Chat with Large Language Models
+
 This repository hosts a lightweight Streamlit-based application designed for seamless interaction with Large Language Models (LLMs) using the Ollama library. The app provides an intuitive interface for sending queries and receiving instant responses from a language model.
 
-Key Features
-Real-Time Chat: Engage in conversations with LLMs and receive responses instantly.
-Simple and Intuitive UI: Built with Streamlit to ensure a user-friendly experience.
-Setup and Installation
+## Key Features
+- **Real-Time Chat:** Engage in conversations with LLMs and receive responses instantly.
+- **Simple and Intuitive UI:** Built with Streamlit to ensure a user-friendly experience.
 
-1. Clone the Repository
+---
+
+## Setup and Installation
+
+### Clone the Repository
 To get started, clone this repository to your local machine:
 ```bash
 git clone https://github.com/shyr1es/Advanced-Programming-Nurda-Dima-Ernur-.git
 cd streamlit-llm-chat
-3. Set Up a Virtual Environment
+```
+### Set Up a Virtual Environment
 Create and activate a virtual environment to manage dependencies:
-
-Linux/Mac:
+For Linux/Mac:
 ```bash
 python -m venv venv  
 source venv/bin/activate  
-Windows:
+```
+For Windows:
 ```bash
 python -m venv venv  
 venv\Scripts\activate  
-3. Install Dependencies
+```
+
+### Install Dependencies
 Install all the required libraries by running:
 ```bash
 pip install -r requirements.txt
-How to Use
+```
+
+### How to Use
 Launch the Application
 Run the Streamlit app with the following command:
 ```bash
 streamlit run src/app.py
-Access the App
+```
+### Access the App
 Open your browser and navigate to:
 ```bash
 http://localhost:8501
+```
 
-Interact with the Assistant
 
-Select your preferred language model from the sidebar.
-Input your question in the chat box.
-Get instant responses and engage in a real-time conversation.
