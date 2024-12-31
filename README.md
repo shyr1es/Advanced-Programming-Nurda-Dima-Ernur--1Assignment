@@ -1,50 +1,58 @@
-Chat with Large Language Models
-This repository hosts a lightweight Streamlit-based application designed for seamless interaction with Large Language Models (LLMs) using the Ollama library. The app provides an intuitive interface for sending queries and receiving instant responses from a language model.
+### LLM Chat Application
+This project is a web application built with Streamlit, integrated with ChromaDB to store chat history, and uses the Ollama language model (LLM) to process user queries.
+### Description
+The application allows users to input text-based queries, which are then answered by the Ollama LLM. Both the queries and their corresponding responses are stored in ChromaDB for future use and analysis. This makes it easy to keep track of chat history and enhance the system's ability to process similar queries over time.
+### Key Components
+Streamlit — used to build the web interface.
+ChromaDB — handles storing and querying data, including the chat history.
+Ollama — generates answers to text queries using the LLM model.
+### Features
+Interactive Chat: Users can submit questions through a simple text input field.
+LLM Integration: The app processes user queries using the Ollama LLM model.
+Database Storage: Queries and their responses are stored in ChromaDB for future reference and easy retrieval.
+Terminal Feedback: The terminal logs indicate successful document saving in the database.
+### Requirements
+To run this application on your local machine, you will need to install the following Python packages:
 
-Key Features
-Real-Time Chat: Engage in conversations with LLMs and receive responses instantly.
-Simple and Intuitive UI: Built with Streamlit to ensure a user-friendly experience.
-Setup and Installation
+streamlit
+chromadb
+langchain-ollama
+os (this is part of the Python standard library)
 
-1. Clone the Repository
-To get started, clone this repository to your local machine:
-
-bash
-Копировать код
-git clone https://github.com/shyr1es/Advanced-Programming-Nurda-Dima-Ernur-.git
-cd streamlit-llm-chat
-2. Set Up a Virtual Environment
-Create and activate a virtual environment to manage dependencies:
-
-Linux/Mac:
-bash
-Копировать код
-python -m venv venv  
-source venv/bin/activate  
-Windows:
-bash
-Копировать код
-python -m venv venv  
-venv\Scripts\activate  
-3. Install Dependencies
-Install all the required libraries by running:
-
-bash
-Копировать код
+You can install all dependencies with the following command:
+```bash
 pip install -r requirements.txt
-How to Use
-Launch the Application
-Run the Streamlit app with the following command:
+```
+Alternatively, you can manually install each package:
+```bash
+pip install streamlit chromadb langchain-ollama
+```
+### Setup
+### Clone the Repository:
+You can clone the repository from GitHub:
+```bash
+git clone https://github.com/shyr1es/Advanced-Programming-Nurda-Dima-Ernur-.git
+cd Advanced-Programming-Nurda-Dima-Ernur-
+```
+### Install Dependencies:
+After cloning the repository, navigate to the project directory and install the dependencies:
+```bash
+pip install -r requirements.txt
+```
+### Run the Streamlit App:
+To start the application, run the following command:
+```bash
+streamlit run app.py
+```
+### Using the App:
+Open the app in your browser (usually at http://localhost:8501).
+Enter a query in the text input field.
+Press "Submit" to send the query to the LLM and receive a response.
+Both the query and the response will be saved in ChromaDB for future reference.
+### Terminal Feedback:
+The terminal will show messages indicating that the query and response have been successfully saved in the database.
 
-bash
-Копировать код
-streamlit run src/app.py
-Access the App
-Open your browser and navigate to:
-http://localhost:8501
-
-Interact with the Assistant
-
-Select your preferred language model from the sidebar.
-Input your question in the chat box.
-Get instant responses and engage in a real-time conversation.
+### Example of How It Works
+User Query: "What is the weather like today?"
+Model Response: "I don't have access to live data, but you can check the weather online."
+Saved in ChromaDB: Both the user query and the response are stored in the database.
