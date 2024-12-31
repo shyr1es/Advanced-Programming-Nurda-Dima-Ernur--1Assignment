@@ -8,39 +8,32 @@ Setup and Installation
 
 1. Clone the Repository
 To get started, clone this repository to your local machine:
-
-bash
-Копировать код
+```bash
 git clone https://github.com/shyr1es/Advanced-Programming-Nurda-Dima-Ernur-.git
 cd streamlit-llm-chat
-2. Set Up a Virtual Environment
+3. Set Up a Virtual Environment
 Create and activate a virtual environment to manage dependencies:
 
 Linux/Mac:
-bash
-Копировать код
+```bash
 python -m venv venv  
 source venv/bin/activate  
 Windows:
-bash
-Копировать код
+```bash
 python -m venv venv  
 venv\Scripts\activate  
 3. Install Dependencies
 Install all the required libraries by running:
-
-bash
-Копировать код
+```bash
 pip install -r requirements.txt
 How to Use
 Launch the Application
 Run the Streamlit app with the following command:
-
-bash
-Копировать код
+```bash
 streamlit run src/app.py
 Access the App
 Open your browser and navigate to:
+```bash
 http://localhost:8501
 
 Interact with the Assistant
