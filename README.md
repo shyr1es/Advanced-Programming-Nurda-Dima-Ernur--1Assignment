@@ -14,7 +14,7 @@ This repository hosts a lightweight Streamlit-based application designed for sea
 To get started, clone this repository to your local machine:
 ```bash
 git clone https://github.com/shyr1es/Advanced-Programming-Nurda-Dima-Ernur-.git
-cd streamlit-llm-chat
+cd Advanced-Programming-Nurda-Dima-Ernur-
 ```
 ### Set Up a Virtual Environment
 Create and activate a virtual environment to manage dependencies:
